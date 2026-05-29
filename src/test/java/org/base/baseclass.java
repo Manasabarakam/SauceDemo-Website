@@ -9,7 +9,7 @@ import org.openqa.selenium.chrome.ChromeOptions;
 
 
 
-public class baseclass {
+public class BaseClass {
 
 	protected static WebDriver driver;
 
@@ -33,21 +33,21 @@ public class baseclass {
 	public static void launchURL(String url) {
 		driver.get(url);
 		driver.manage().window().maximize();
-		//driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(seconds));
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(seconds));
 	}
 	
-	public static WebElement findid(String id) {
+	public static WebElement findId(String id) {
 		return driver.findElement(By.id(id));
 	} 
 	
-	public static WebElement findname(String name) {
+	public static WebElement findName(String name) {
 		return driver.findElement(By.name(name));
 	}
 	public static WebElement findXpath(String Xpath) {
 		return driver.findElement(By.xpath(Xpath));
 	}
 	
-	public static void clickbtn(WebElement btn) {
+	public static void clickBtn(WebElement btn) {
 		btn.click();
 	}
 	
