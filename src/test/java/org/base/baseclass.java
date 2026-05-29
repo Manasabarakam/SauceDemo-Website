@@ -17,7 +17,9 @@ public class baseclass {
 	    ChromeOptions options = new ChromeOptions();
 	    
 	    // This argument disables the Google password leak warning popup completely
-	    options.addArguments("--disable-features=PasswordLeakDetection");
+	    // This new argument disables the Google password leak warning completely,now run
+	   
+	    options.addArguments("--incognito");
 	    
 	    // Optional: Also disables password saving prompts for automation stability
 	    java.util.HashMap<String, Object> prefs = new java.util.HashMap<>();
