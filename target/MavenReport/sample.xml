@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="6.551" tests="1" skipped="0" failures="0" errors="0">
+<testcase classname="Automating the SauceDemo E-commerce website" name="Successful checkout workflow" time="6.377">
+<system-out><![CDATA[
+Given the user is on the Sauce Demo Page....................................passed
+When user logs in with the correct credentials..............................passed
+And adds items to the cart and clicks checkout..............................passed
+And enters checkout information with first name "Manasa" last name "Barakam" and zip code "600040".passed
+Then the order confirmation message "Thank you for your order!" should be displayed.passed
+]]></system-out>
+</testcase>
+</testsuite>
